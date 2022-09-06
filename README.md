@@ -10,3 +10,4 @@
 - pincel.lineTo(200, 400) (Mover el pincel y que haga una línea en (x, y))
 - pincel.fill("blue") (Rellenar una figura con un color)
 - pincel.arc(300, 200, 50, 0, 2 \* 3.14) (Graficar circunferencias: (ubicación x, ubicación y, tamaño_en_radio, angulo_inicial, angulo_final ))
+- pincel.strokeStyle = "black"; y pincel.strokeRect(50, 0, 50, 50); (color de borde negro, coordenada donde se va a poner el borde)
