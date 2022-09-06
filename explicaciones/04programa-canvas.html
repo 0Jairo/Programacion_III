@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programa canvas</title>
+  </head>
+  <body>
+    <header>
+      <h2>Programa: Cuarto programa canvas</h2>
+    </header>
+    <main>
+      <canvas width="600" height="400"></canvas>
+
+      <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = "lightgrey";
+        pincel.fillRect(0, 0, 600, 400);
+
+        function disenarCircunferencia(x, y, radio) {
+          pincel.fillStyle = "blue";
+          pincel.beginPath();
+          pincel.arc(x, y, radio, 0, 2 * Math.PI);
+          pincel.fill();
+        }
+
+        function limpierPantalla() {
+          pincel.clearRect(0, 0, 600, 400);
+        }
+
+        var x = 0;
+
+        function actualizarPantalla() {
+          limpierPantalla();
+          disenarCircunferencia(x, 20, 10);
+          x++;
+        }
+
+        setInterval(actualizarPantalla, 100);
+      </script>
+    </main>
+    <footer>Aquí esta el footer</footer>
+  </body>
+</html>

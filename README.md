@@ -11,3 +11,4 @@
 - pincel.fill("blue") (Rellenar una figura con un color)
 - pincel.arc(300, 200, 50, 0, 2 \* 3.14) (Graficar circunferencias: (ubicación x, ubicación y, tamaño_en_radio, angulo_inicial, angulo_final ))
 - pincel.strokeStyle = "black"; y pincel.strokeRect(50, 0, 50, 50); (color de borde negro, coordenada donde se va a poner el borde)
+- Math.floor (redondear asia el negativo: 4.6 redondeado a 4)
